@@ -31,7 +31,7 @@ namespace UserApp
             services.AddControllersWithViews();
             services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
-            services.ConfigureApplicationCookie(opts => opts.LoginPath = "/Authenticate/Login");
+            services.ConfigureApplicationCookie(opts => opts.LoginPath = "/Account/Login");
             services.Configure<IdentityOptions>(opts => {
                 opts.Password.RequiredLength = 8;
                 opts.Password.RequireNonAlphanumeric = false;

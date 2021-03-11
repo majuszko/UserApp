@@ -50,5 +50,10 @@ namespace UserApp.Controllers
             }
             return View(login);
         }
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

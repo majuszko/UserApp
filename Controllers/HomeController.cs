@@ -49,5 +49,6 @@ namespace UserApp.Controllers
             string message = "Hello " + user.UserName;
             return View((object)message);
         }
+
     }
 }
