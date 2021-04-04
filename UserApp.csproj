@@ -16,5 +16,7 @@
   <ItemGroup>
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="Views\Role\" />
+    <Folder Include="TagHelper\" />
   </ItemGroup>
 </Project>

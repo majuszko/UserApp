@@ -39,7 +39,12 @@ namespace UserApp
                 opts.Password.RequireUppercase = false;
                 opts.Password.RequireDigit = true;
             });
-
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.Cookie.Name = ".AspNetCore.Identity.Application";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+                options.SlidingExpiration = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
