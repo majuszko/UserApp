@@ -13,6 +13,6 @@ namespace UserApp.Models
         {
         }
         
-        //public DbSet<User> Users { get; set; }
+        
     }
 }
