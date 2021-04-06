@@ -173,7 +173,6 @@
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/refs/Microsoft.Extensions.Diagnostics.HealthChecks.dll
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/refs/Microsoft.Extensions.FileProviders.Abstractions.dll
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/refs/Microsoft.Extensions.FileProviders.Composite.dll
-/Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/refs/Microsoft.Extensions.FileProviders.Embedded.dll
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/refs/Microsoft.Extensions.FileProviders.Physical.dll
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/refs/Microsoft.Extensions.FileSystemGlobbing.dll
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/refs/Microsoft.Extensions.Hosting.Abstractions.dll
@@ -393,3 +392,10 @@
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Role/Create.cshtml.g.cs
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Role/Update.cshtml.g.cs
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Account/AccessDenied.cshtml.g.cs
+/Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/UserApp.StaticWebAssets.xml
+/Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+/Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.UI.dll
+/Users/Maja/Desktop/DOTNET/UserApp/UserApp/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Profile/Accounts.cshtml.g.cs
+/Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Profile/Index.cshtml.g.cs
+/Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Profile/ProfileView.cshtml.g.cs

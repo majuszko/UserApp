@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fpti+EddOKpThNhzhkuTAcX0WwjMH34Aw3qsyjPNuxT3eI+5hAUNTjRN7cZcwDqCDCIS6waOCuxd8DGaCW0HQw==",
+  "dgSpecHash": "e756WaqO9Zs7OULVPmOmydFhTJk2/ye2P5c3DSWCo09lmuQq3YcivskpZIRHXYbYvXcn/9FBl2Nm+3YA3RGilw==",
   "success": true,
   "projectFilePath": "/Users/Maja/Desktop/DOTNET/UserApp/UserApp/UserApp.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "/Users/Maja/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.aspnetcore.identity/2.2.0/microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/5.0.4/microsoft.aspnetcore.identity.entityframeworkcore.5.0.4.nupkg.sha512",
+    "/Users/Maja/.nuget/packages/microsoft.aspnetcore.identity.ui/5.0.4/microsoft.aspnetcore.identity.ui.5.0.4.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/5.0.4/microsoft.aspnetcore.mvc.razor.extensions.5.0.4.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.aspnetcore.mvc.razor.runtimecompilation/5.0.4/microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.4.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.aspnetcore.razor.language/5.0.4/microsoft.aspnetcore.razor.language.5.0.4.nupkg.sha512",
@@ -44,7 +45,8 @@
     "/Users/Maja/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.1/microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.extensions.dependencymodel/5.0.0/microsoft.extensions.dependencymodel.5.0.0.nupkg.sha512",
-    "/Users/Maja/.nuget/packages/microsoft.extensions.fileproviders.abstractions/2.2.0/microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "/Users/Maja/.nuget/packages/microsoft.extensions.fileproviders.abstractions/5.0.0/microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "/Users/Maja/.nuget/packages/microsoft.extensions.fileproviders.embedded/5.0.4/microsoft.extensions.fileproviders.embedded.5.0.4.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.extensions.hosting.abstractions/2.2.0/microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.extensions.identity.core/5.0.4/microsoft.extensions.identity.core.5.0.4.nupkg.sha512",
     "/Users/Maja/.nuget/packages/microsoft.extensions.identity.stores/5.0.4/microsoft.extensions.identity.stores.5.0.4.nupkg.sha512",

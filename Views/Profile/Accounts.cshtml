@@ -1,0 +1,19 @@
+﻿@model IEnumerable<AppUser>
+
+<h1>All Users</h1>
+
+
+<div class="container">
+    @foreach (AppUser user in Model)
+    {
+    <div class="col">
+        <div class="row">
+
+            <a class="btn btn-sm btn-primary" asp-action="ProfileView" asp-route-id="@user.Id"> @user.UserName </a>
+            @user.Age
+
+        </div>
+    </div>
+    }
+
+</div>

@@ -16,10 +16,10 @@ namespace UserApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        
-        private UserManager<AppUser> userManager;
 
-        
+        public UserManager<AppUser> userManager;
+
+
 
         public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userMgr)
         {
@@ -43,7 +43,7 @@ namespace UserApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        
+
 
         [ActivatorUtilitiesConstructor]
         [Authorize(Roles = "Admin")]
@@ -58,5 +58,7 @@ namespace UserApp.Controllers
             return View((object)message);
         }
 
+        
+        
     }
 }

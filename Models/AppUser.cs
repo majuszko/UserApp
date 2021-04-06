@@ -14,7 +14,6 @@ namespace UserApp.Models
         public int Age { get; set; }
         public Gender Gender { get; set; }
         public string City { get; set; }
-        public byte[] ProfilePicture { get; set; }
 
         public AppUser()
         {

@@ -81,6 +81,7 @@ namespace UserApp.Controllers
                 else
                     ModelState.AddModelError("", "Password cannot be empty");
 
+                
                 user.Age = age;
                 user.City = city;
                 Country myCountry;
