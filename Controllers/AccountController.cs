@@ -55,5 +55,9 @@ namespace UserApp.Controllers
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }

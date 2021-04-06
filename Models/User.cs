@@ -25,7 +25,11 @@ namespace UserApp.Models
         {
             get; set;
         }
-
+        public Country Country { get; set; }
+        public int Age { get; set; }
+        public Gender Gender { get; set; }
+        public string City { get; set; }
+        public byte[] ProfilePicture { get; set; }
 
         public User()
         {

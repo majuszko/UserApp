@@ -37,7 +37,11 @@ namespace UserApp.Controllers
                 AppUser appUser = new AppUser
                 {
                     UserName = user.Name,
-                    Email = user.Email
+                    Email = user.Email,
+                    Age = user.Age,
+                    Gender = user.Gender,
+                    City = user.City,
+                    Country = user.Country
                 };
 
                 IdentityResult result = await userManager.CreateAsync(appUser, user.Password);
@@ -62,7 +66,7 @@ namespace UserApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(string id, string email, string password)
+        public async Task<IActionResult> Update(string id, string email, string password, int age, string gender, string city, string country)
         {
             AppUser user = await userManager.FindByIdAsync(id);
             if (user != null)
@@ -76,6 +80,18 @@ namespace UserApp.Controllers
                     user.PasswordHash = passwordHasher.HashPassword(user, password);
                 else
                     ModelState.AddModelError("", "Password cannot be empty");
+
+                user.Age = age;
+                user.City = city;
+                Country myCountry;
+                Enum.TryParse(country, out myCountry);
+                user.Country = myCountry;
+
+                Gender myGender;
+                Enum.TryParse(gender, out myGender);
+                user.Gender = myGender;
+
+
 
                 if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
                 {

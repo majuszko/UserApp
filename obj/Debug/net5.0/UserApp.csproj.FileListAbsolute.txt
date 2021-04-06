@@ -392,3 +392,4 @@
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/UserApp.MvcApplicationPartsAssemblyInfo.cs
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Role/Create.cshtml.g.cs
 /Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Role/Update.cshtml.g.cs
+/Users/Maja/Desktop/DOTNET/UserApp/UserApp/obj/Debug/net5.0/Razor/Views/Account/AccessDenied.cshtml.g.cs

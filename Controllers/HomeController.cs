@@ -16,7 +16,11 @@ namespace UserApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        
         private UserManager<AppUser> userManager;
+
+        
+
         public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userMgr)
         {
             _logger = logger;
@@ -42,11 +46,15 @@ namespace UserApp.Controllers
         
 
         [ActivatorUtilitiesConstructor]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             AppUser user = await userManager.GetUserAsync(HttpContext.User);
-            string message = "Hello " + user.UserName;
+            int time = DateTime.Now.Hour;
+
+            string message = "Hello there, Admin " + user.UserName;
+
+
             return View((object)message);
         }
 

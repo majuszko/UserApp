@@ -8,7 +8,7 @@
 @Model
 @if (User?.Identity?.IsAuthenticated ?? false)
 {
-
-                <a class="nav-link" asp-controller="Account" asp-action="Logout" class="btn btn-danger">Logout</a>
+    <a asp-controller="Account" asp-action="Logout" class="btn btn-danger">Logout</a>
+    
 
 }
