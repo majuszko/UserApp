@@ -22,6 +22,35 @@ namespace UserApp.Controllers
             signInManager = signinMgr;
         }
         [AllowAnonymous]
+        public ViewResult Create() => View();
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Create(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                AppUser appUser = new AppUser
+                {
+                    UserName = user.Name,
+                    Email = user.Email,
+                    Age = user.Age,
+                    Gender = user.Gender,
+                    City = user.City,
+                    Country = user.Country
+                };
+
+                IdentityResult result = await userManager.CreateAsync(appUser, user.Password);
+                if (result.Succeeded)
+                    return RedirectToAction("Login");
+                else
+                {
+                    foreach (IdentityError error in result.Errors)
+                        ModelState.AddModelError("", error.Description);
+                }
+            }
+            return View(user);
+        }
+        [AllowAnonymous]
         public IActionResult Login(string returnUrl)
         {
             Login login = new Login();

@@ -43,16 +43,16 @@ namespace UserApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-
+        
         [ActivatorUtilitiesConstructor]
-        [Authorize(Roles = "MeetyUser")]
+        //[Authorize(Roles = "MeetyUser")]
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             AppUser user = await userManager.GetUserAsync(HttpContext.User);
             int time = DateTime.Now.Hour;
 
-            string message = "Hello there, " + user.UserName;
+            string message = "Hello there, " + user.UserName+"!";
 
 
             return View((object)message);

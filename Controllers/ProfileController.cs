@@ -45,7 +45,6 @@ namespace UserApp.Controllers
             AppUser user = await userManager.FindByIdAsync(id);
             User usr = new User();
             //AppUser user = await userManager.GetUserAsync(HttpContext.User);
-            
             //var userId = await userManager.GetUserIdAsync(HttpContext.User);
             //string username = "This is " + user.UserName+ "'s Profile";
             if (user != null)

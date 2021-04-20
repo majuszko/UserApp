@@ -112,7 +112,6 @@ namespace UserApp.Controllers
                     }
                 }
             }
-
             if (ModelState.IsValid)
                 return RedirectToAction(nameof(Index));
             else
