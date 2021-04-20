@@ -10,6 +10,7 @@ namespace UserApp.Models
     public enum Gender {Male, Female, Nonbinary, Other}
     public class AppUser : IdentityUser
     {
+        //public byte[] UserPhoto { get; set; }
         public Country Country { get; set; }
         public int Age { get; set; }
         public Gender Gender { get; set; }

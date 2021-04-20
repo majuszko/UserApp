@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<AppUser>
-
+@{
+    ViewData["Title"] = "Users";
+}
 <h1>All Users</h1>
 
 
@@ -10,7 +12,7 @@
         <div class="row">
 
             <a class="btn btn-sm btn-primary" asp-action="ProfileView" asp-route-id="@user.Id"> @user.UserName </a>
-            @user.Age
+            <p>Wiek: @user.Age<p/>
 
         </div>
     </div>

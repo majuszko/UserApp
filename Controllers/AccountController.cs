@@ -11,10 +11,8 @@ namespace UserApp.Controllers
     public class AccountController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index() => View();
+
         private UserManager<AppUser> userManager;
         private SignInManager<AppUser> signInManager;
 
