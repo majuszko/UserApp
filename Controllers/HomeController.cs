@@ -46,13 +46,13 @@ namespace UserApp.Controllers
 
 
         [ActivatorUtilitiesConstructor]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "MeetyUser")]
         public async Task<IActionResult> Index()
         {
             AppUser user = await userManager.GetUserAsync(HttpContext.User);
             int time = DateTime.Now.Hour;
 
-            string message = "Hello there, Admin " + user.UserName;
+            string message = "Hello there, " + user.UserName;
 
 
             return View((object)message);

@@ -43,12 +43,13 @@ namespace UserApp.Controllers
         public async Task<IActionResult> ProfileView(string id)
         {
             AppUser user = await userManager.FindByIdAsync(id);
+            User usr = new User();
             //AppUser user = await userManager.GetUserAsync(HttpContext.User);
             
             //var userId = await userManager.GetUserIdAsync(HttpContext.User);
-            string username = "This is " + user.UserName+ "'s Profile";
+            //string username = "This is " + user.UserName+ "'s Profile";
             if (user != null)
-                return View((object)username);
+                return View(user);
             else
                 return RedirectToAction("Index");
         }

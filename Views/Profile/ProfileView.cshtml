@@ -1,4 +1,10 @@
-﻿
-@model string
-@Model
+﻿@model AppUser
+@{
+    ViewData["Title"] = "User";
+}
+<h1>This is @Model.UserName's profile.</h1>
+<h5>Gender: @Model.Gender </h5>
+<h5>Age: @Model.Age </h5>
+<h5>City: @Model.City </h5>
+<h5>Country: @Model.Country </h5>
 
