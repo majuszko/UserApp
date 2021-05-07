@@ -1,6 +1,6 @@
 ﻿@model AppUser
 @{
-    ViewData["Title"] = "User";
+    ViewData["Title"] = @Model.UserName;
 }
 <h1>This is @Model.UserName's profile.</h1>
 <h5>Gender: @Model.Gender </h5>

@@ -16,8 +16,12 @@ namespace UserApp.Models
         public Gender Gender { get; set; }
         public string City { get; set; }
 
+        public virtual ICollection<Message> Messages { get; set; }
+
         public AppUser()
         {
+            Messages = new HashSet<Message>();
+            
         }
     }
 }
