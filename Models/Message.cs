@@ -14,5 +14,10 @@ namespace UserApp.Models
         public DateTime When { get; set; }
         public string UserID { get; set; }
         public virtual AppUser Sender { get; set; }
+
+        public Message()
+        {
+            When = DateTime.Now;
+        }
     }
 }
